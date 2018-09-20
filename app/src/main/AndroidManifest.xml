@@ -28,6 +28,33 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kwa.pumps.ndrapp.MainActivity" />
         </activity>
+        <activity
+            android:name=".Report"
+            android:label="@string/title_activity_report"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kwa.pumps.ndrapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ReportFiles"
+            android:label="@string/title_activity_report_files"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kwa.pumps.ndrapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kwa.pumps.ndrapp.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

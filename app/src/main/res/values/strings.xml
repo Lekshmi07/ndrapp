@@ -7,4 +7,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_report">Report</string>
+    <string name="title_activity_report_files">ReportFiles</string>
+    <string name="title_activity_settings">Settings</string>
 </resources>
