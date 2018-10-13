@@ -64,6 +64,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kwa.pumps.ndrapp.MainActivity" />
         </activity>
+        <activity
+            android:name=".Reported"
+            android:label="@string/title_activity_reported"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kwa.pumps.ndrapp.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

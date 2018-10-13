@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="kwa.pumps.ndrapp.NewReport"
-    tools:showIn="@layout/app_bar_new_report">
+    tools:context="kwa.pumps.ndrapp.Reported"
+    tools:showIn="@layout/app_bar_reported">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,12 +20,13 @@
             android:orientation="vertical"
             android:paddingVertical="20dp"
             android:paddingHorizontal="20dp">
+
             <TextView
                 android:id="@+id/tv_Header"
                 style="@style/AlertDialog.AppCompat.Light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Report a Surveillance"
+                android:text="Reported Surveillance"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/colorPrimary"
                 android:textColorLink="@android:color/holo_blue_light"
@@ -46,20 +47,21 @@
                 app:layout_constraintHorizontal_bias="0.509"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp">
 
 
                 <TableRow>
 
                     <TextView
-                        android:id="@+id/textView9"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Name" />
+                        android:text="Date" />
 
 
-                    <EditText
-                        android:id="@+id/ed_Name"
+                    <TextView
+                        android:id="@+id/tv_Date"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:accessibilityLiveRegion="assertive"
@@ -74,11 +76,11 @@
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Age" />
+                        android:text="Name" />
 
 
-                    <EditText
-                        android:id="@+id/ed_Age"
+                    <TextView
+                        android:id="@+id/tv_Name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:accessibilityLiveRegion="assertive"
@@ -95,10 +97,10 @@
                         android:id="@+id/textView12"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Gender" />
+                        android:text="Age" />
 
-                    <Spinner
-                        android:id="@+id/sp_gender"
+                    <TextView
+                        android:id="@+id/tv_Age"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
 
@@ -111,10 +113,10 @@
                         android:id="@+id/textView13"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Provisional Diagnosis" />
+                        android:text="Gender" />
 
-                    <EditText
-                        android:id="@+id/ed_Curr_Hosp"
+                    <TextView
+                        android:id="@+id/tv_Gender"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:accessibilityLiveRegion="assertive"
@@ -129,10 +131,10 @@
                         android:id="@+id/textView14"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Other Conditions Suffering" />
+                        android:text="Diagnosis" />
 
-                    <EditText
-                        android:id="@+id/ed_Curr_Hos_Type"
+                    <TextView
+                        android:id="@+id/tv_Diagnosis"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:accessibilityLiveRegion="assertive"
@@ -144,93 +146,17 @@
 
                 <TableRow>
 
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Address" />
-
-
-                    <EditText
-                        android:id="@+id/ed_Curr_Hos_Dist"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:accessibilityLiveRegion="assertive"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:textAlignment="center" />
-
-
-                </TableRow>
-
-                <TableRow>
-
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="District" />
-
-
-                    <EditText
-                        android:id="@+id/ed_Address"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:accessibilityLiveRegion="assertive"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:textAlignment="center" />
-
-                </TableRow>
-
-                <TableRow>
-
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Block" />
-
-
-                    <EditText
-                        android:id="@+id/ed_Address"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:accessibilityLiveRegion="assertive"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:textAlignment="center" />
-
-                </TableRow>
-                <TableRow>
-
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Contact number" />
-
-
-                    <EditText
-                        android:id="@+id/ed_Address"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:accessibilityLiveRegion="assertive"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:textAlignment="center" />
+                    <Button
+                        android:id="@+id/bt_View"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        tools:text="View" />
 
                 </TableRow>
 
             </TableLayout>
 
-            <Button
-                android:id="@+id/bt_Add"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Add" />
         </LinearLayout>
     </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>
